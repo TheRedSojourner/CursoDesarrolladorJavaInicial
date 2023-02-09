@@ -16,21 +16,24 @@ public class Main {
         boolean soloPares = true;
         while (marcador<=numeroFin)
         {
+            //Todos los numeros:
             System.out.println(marcador);
-            //Pares:
 
+            //Pares:
             if (soloPares && marcador%2 == 0)
             {
                 System.out.println(marcador);
             }
+            //Enumerador: 
             marcador++;
         }
 
-        for (int nuevoMarcador = numeroFin; nuevoMarcador >= 0; nuevoMarcador--)
+        /*for (int nuevoMarcador = numeroFin; nuevoMarcador >= 0; nuevoMarcador--)
         {
             System.out.println(nuevoMarcador);
-        }
-        float ingresos = 299000;
+        }*/
+
+        /*float ingresos = 299000;
         int superficie = 20;
         int energia = 900;
 
@@ -42,7 +45,7 @@ public class Main {
          (superficie <= 45) &&
          (energia <= 5000) ) {
          System.out.println("Categoría B");
-         }
+         }*/
     }
 }
 
