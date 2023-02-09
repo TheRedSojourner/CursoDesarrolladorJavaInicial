@@ -1,14 +1,51 @@
+
 public class Main {
+
     public static void main(String[] args) {
+		/*/*Clase 1 - “Desarrollador Java inicial”
+		Introducción a Algoritmos y Java
+		1. Vamos a practicar operaciones básicas con números
+		a. Utilizando la sentencia while, imprima todos los números entre 2 variables “a”
+		y “b”. Su código puede arrancar (por ejemplo):
+		int numeroInicio = 5;
+		int numeroFin = 14;*/
 
+        int numeroInicial = 5;
+        int numeroFin = 14;
+        int marcador = numeroInicial;
+        boolean soloPares = true;
+        while (marcador<=numeroFin)
+        {
+            System.out.println(marcador);
+            //Pares:
 
-        System.out.println("Hello world!");
-        sum(1,4);
+            if (soloPares && marcador%2 == 0)
+            {
+                System.out.println(marcador);
+            }
+            marcador++;
+        }
 
+        for (int nuevoMarcador = numeroFin; nuevoMarcador >= 0; nuevoMarcador--)
+        {
+            System.out.println(nuevoMarcador);
+        }
+        float ingresos = 299000;
+        int superficie = 20;
+        int energia = 900;
 
-    }
-    public static void sum(int i, int j)
-    {
-        System.out.print(i+j);
+        if ( (ingresos <= 748382.07) &&
+         ( superficie <= 30) &&
+         (energia <= 3330) ) {
+         System.out.println("Categoría A");
+         } else if((ingresos <= 1112459.83) &&
+         (superficie <= 45) &&
+         (energia <= 5000) ) {
+         System.out.println("Categoría B");
+         }
     }
 }
+
+/*
+
+2*/
