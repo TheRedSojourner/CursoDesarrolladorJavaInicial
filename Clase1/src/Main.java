@@ -24,7 +24,7 @@ public class Main {
             {
                 System.out.println(marcador);
             }
-            //Enumerador: 
+            //Enumerador:
             marcador++;
         }
 
