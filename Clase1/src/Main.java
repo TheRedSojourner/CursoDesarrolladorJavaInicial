@@ -2,7 +2,7 @@
 public class Main {
 
     public static void main(String[] args) {
-		/*/*Clase 1 - “Desarrollador Java inicial”
+		/*Clase 1 - “Desarrollador Java inicial”
 		Introducción a Algoritmos y Java
 		1. Vamos a practicar operaciones básicas con números
 		a. Utilizando la sentencia while, imprima todos los números entre 2 variables “a”
