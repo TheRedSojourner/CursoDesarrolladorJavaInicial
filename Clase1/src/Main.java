@@ -17,7 +17,7 @@ public class Main {
         int numeroFin = 14;
         int marcador = numeroInicial;
         boolean soloPares = true;
-        while (marcador<=numeroFin)
+        /*while (marcador<=numeroFin)
         {
             //Todos los numeros:
             System.out.println(marcador);
@@ -29,26 +29,30 @@ public class Main {
             }
             //Enumerador:
             marcador++;
-        }
+        }*/
+
+
 
         /*for (int nuevoMarcador = numeroFin; nuevoMarcador >= 0; nuevoMarcador--)
         {
             System.out.println(nuevoMarcador);
         }*/
 
-        /*float ingresos = 299000;
+        float ingresos = 299000;
         int superficie = 20;
         int energia = 900;
 
         if ( (ingresos <= 748382.07) &&
-         ( superficie <= 30) &&
-         (energia <= 3330) ) {
-         System.out.println("Categoría A");
-         } else if((ingresos <= 1112459.83) &&
+                ( superficie <= 30) &&
+                (energia <= 3330) )
+               {System.out.println("Categoría A");}
+        else if((ingresos <= 1112459.83) &&
          (superficie <= 45) &&
          (energia <= 5000) ) {
          System.out.println("Categoría B");
-         }*/
+         }
+        else {//categoria jota lololo
+             }
     }
 }
 
