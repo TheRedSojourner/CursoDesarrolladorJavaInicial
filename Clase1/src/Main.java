@@ -10,6 +10,9 @@ public class Main {
 		int numeroInicio = 5;
 		int numeroFin = 14;*/
 
+        //Comentario ironico
+        //comentario paradoxico
+
         int numeroInicial = 5;
         int numeroFin = 14;
         int marcador = numeroInicial;
