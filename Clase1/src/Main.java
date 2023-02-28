@@ -13,31 +13,34 @@ public class Main {
         //Comentario ironico
         //comentario paradoxico
 
-        int numeroInicial = 5;
-        int numeroFin = 14;
+        int numeroInicial = 2;
+        int numeroFin = 900;
         int marcador = numeroInicial;
         boolean soloPares = true;
-        /*while (marcador<=numeroFin)
+        while (marcador<=numeroFin)
         {
             //Todos los numeros:
-            System.out.println(marcador);
+            //System.out.println(marcador);
 
             //Pares:
             if (soloPares && marcador%2 == 0)
             {
                 System.out.println(marcador);
+            } else
+            {
+                System.out.println(marcador);
             }
             //Enumerador:
             marcador++;
-        }*/
+        }
 
 
 
         /*for (int nuevoMarcador = numeroFin; nuevoMarcador >= 0; nuevoMarcador--)
         {
             System.out.println(nuevoMarcador);
-        }*/
-
+        }
+        /*
         float ingresos = 299000;
         int superficie = 20;
         int energia = 900;
@@ -53,6 +56,7 @@ public class Main {
          }
         else {//categoria jota lololo
              }
+        */
     }
 }
 
