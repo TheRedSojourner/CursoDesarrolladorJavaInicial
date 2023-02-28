@@ -26,9 +26,6 @@ public class Main {
             if (soloPares && marcador%2 == 0)
             {
                 System.out.println(marcador);
-            } else
-            {
-                System.out.println(marcador);
             }
             //Enumerador:
             marcador++;
