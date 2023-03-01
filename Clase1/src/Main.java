@@ -2,6 +2,9 @@
 public class Main {
 
     public static void main(String[] args) {
+        //Clase 1: Variables, condicionales, ciclos.
+        //Clase 2: Git, repositorios
+
 		/*Clase 1 - “Desarrollador Java inicial”
 		Introducción a Algoritmos y Java
 		1. Vamos a practicar operaciones básicas con números
@@ -10,11 +13,9 @@ public class Main {
 		int numeroInicio = 5;
 		int numeroFin = 14;*/
 
-        //Comentario ironico
-        //comentario paradoxico
 
         int numeroInicial = 2;
-        int numeroFin = 900;
+        int numeroFin = 15;
         int marcador = numeroInicial;
         boolean soloPares = true;
         while (marcador<=numeroFin)
@@ -31,9 +32,10 @@ public class Main {
             marcador++;
         }
 
+        System.out.print(marcador);
 
 
-        /*for (int nuevoMarcador = numeroFin; nuevoMarcador >= 0; nuevoMarcador--)
+        for (int nuevoMarcador = numeroFin; nuevoMarcador >= 0; nuevoMarcador--)
         {
             System.out.println(nuevoMarcador);
         }
