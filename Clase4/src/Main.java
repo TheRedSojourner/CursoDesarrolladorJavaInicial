@@ -7,19 +7,27 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) throws IOException {
 
+        ProgramaInterno();
+        //MostramePorPantallaEsteTexto("texto");
+
         //MostraElSiguienteInputPorConsola();
         //boolean fueronIguales = Comparar();
         //CreameUnArchivo("x");
-        ProgramaInterno();
 
-        /*EscribirContenido(Paths.get("clase4/superarchivo.mp3") , "esto es mas contenido lolollllolol");
-        String path = "C:\\Users\\Ice\\Desktop\\Java\\SuperArchivoDeTexto.txt";
+        //EscribirContenido(Paths.get("clase4/superarchivo.mp3") , "esto es mas contenido lolollllolol");
+
+
+        /*String path = "C:\\Users\\Ice\\Desktop\\Java\\SuperArchivoDeTexto.txt";
         String otroPathValido = "C:/Users/Ice/Desktop/Java/SuperArchivoDeTexto.txt";
         String otroPathMas = "ArchivoRandom.txt";
         String yUnpathMas = "clase4/OtroMas.txt";
 
         System.out.println("Este es nuestro string path:" + path);
         System.out.println("Este es el contenido del archivo: "+ Files.readAllLines(Paths.get(path)));
+
+        Path esteEsUnPath = Paths.get("clase4/superArchivo.txt");
+        EscribirContenido(esteEsUnPath, "El mejor contenido de las 11 de la mañana");
+
 
 
         //Podemos usar el data type path en lugar de llamar Paths.get() cada vez que lo necesitemos
@@ -28,12 +36,12 @@ public class Main {
 
         Files.writeString(Paths.get("ArchivoRandom.txt"), "hola\n que tal?\n");
 
-        CrearArchivoConContenido(Paths.get("nuevo archivo.txt"), "Este es el contenido");
-        CrearTemporal();
+        //CrearArchivoConContenido(Paths.get("nuevo archivo.txt"), "Este es el contenido");
+        //CrearTemporal();
 
 
-        int x = Sumar(5, 3);*/
-        //System.out.println("Y al final, fueron iguales los numeros:" + fueronIguales);
+        int x = Sumar(5, 3);
+        //System.out.println("Y al final, fueron iguales los numeros:" + fueronIguales);*/
 
     }
 
@@ -111,11 +119,11 @@ public class Main {
 
     public static void ProgramaInterno()
     {
-        boolean terminado = false;
+        boolean continuaSuperCiclo = true;
         Scanner scanner = new Scanner(System.in);
-        while (terminado == false)
+        while (continuaSuperCiclo == true)
         {
-            System.out.println("Elija una opcion\n 1) Sumar\n 2) Restar \n 3) Salir");
+            System.out.println("Elija una opcion numerica\n 1) Sumar\n 2) Restar \n 3) Salir");
             int input = scanner.nextInt();
 
             switch (input)
@@ -127,10 +135,10 @@ public class Main {
                 break;
                 case 2: Restar(input);
                 break;
-                case 3: terminado = true;
+                case 3: continuaSuperCiclo = false;
                 break;
 
-                default: terminado = true;
+                default: continuaSuperCiclo = true;
                 break;
             }
 
@@ -141,5 +149,28 @@ public class Main {
     {
         System.out.println(x-99);
     }
+
+
+    public static void MostramePorPantallaEsteTexto(String texto)
+    {
+        System.out.println(texto);
+        int x = 0;
+
+        System.out.println(SumameYDameElResultado(55, 3));
+
+
+    }
+
+
+    public static int SumameYDameElResultado(int x, int i)
+    {
+        int resultado = x+i;
+        return  resultado;
+    }
+
+
+
+
+
 
 }
