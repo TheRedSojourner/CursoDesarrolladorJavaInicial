@@ -97,12 +97,15 @@ public class Main {
         nuestroArray[4] = 4;
 
         int suma = 0;
-        for (int i = 0; i <nuestroArray.length-1 ; i++) {
+        for (int i = 0; i <nuestroArray.length ; i++) {
             if (nuestroArray[i]>x)
             {
                 suma += nuestroArray[i];
             }
         }
-        System.out.println("La suma de todos los numeros mayores a X ("+x+") dentro del array da como total: "+suma);
+
+        
+
+         System.out.println("La suma de todos los numeros mayores a X ("+x+") dentro del array da como total: "+suma);
     }
 }
