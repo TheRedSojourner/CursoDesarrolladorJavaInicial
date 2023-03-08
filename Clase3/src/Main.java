@@ -104,7 +104,7 @@ public class Main {
             }
         }
 
-        
+
 
          System.out.println("La suma de todos los numeros mayores a X ("+x+") dentro del array da como total: "+suma);
     }
