@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 public class Carrito {
 
-    //Producto[] productos = new Producto[100];
+    Producto[] productoss = new Producto[100];
 
     public ArrayList<Producto> productos = new ArrayList<Producto>();
+
 
     public void ListarProductos()
     {
@@ -24,6 +25,28 @@ public class Carrito {
             {
                 productos.get(indice).SetMarca(nuevoNombre);
                 encontrado = true;
+            }
+            indice++;
+        }
+    }
+
+    public void RemovemeEstaMarca(String nuevoNombre, String marca)
+    {
+        Producto nuevoProducto = new Producto("Descripcion",
+                20,
+                50.3,
+                "Marca marcosa");
+
+        //Esto es mejor que sea un for
+        int indice = 0;
+
+        while (indice < productos.size())
+        {
+            if (productos.get(indice).GetMarca().equals(marca))
+            {
+                productos.remove(indice);
+                productos.remove(nuevoProducto);
+                indice--;
             }
             indice++;
         }

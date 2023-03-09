@@ -112,9 +112,10 @@ public class Main {
     {
         Scanner scanner = new Scanner(System.in);
         String contenido = scanner.nextLine();
+        Path pathio = Paths.get(path);
 
-        Files.createFile(Paths.get(path));
-        Files.writeString(Paths.get(path), contenido);
+        Files.createFile(pathio);
+        Files.writeString(pathio, contenido);
     }
 
     public static void ProgramaInterno()

@@ -1,7 +1,28 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
         Carrito miCarrito = new Carrito();
+        /*Producto jabon = new Producto();
+        Producto jamon = new Producto();
+        Producto japon = new Producto();
+        System.out.println(jabon.GetMarca());
+
+        String nombreCualquiera = "un nombre para nuestra variable";
+
+        jabon.SetMarca(nombreCualquiera);
+        System.out.println(nombreCualquiera);
+
+        jamon.SetMarca("MegaJamon");
+
+        System.out.println(jabon.GetMarca());
+        //Scanner scanner = new Scanner(System.in);
+        // System.out.println((jabon.SetMarca(scanner.nextLine())));
+
+*/
+
+        Producto japon = new Producto("El Pais entero de Japon", 1, 10, "Japon");
 
         Producto jabon = new Producto(
                 "Esto es un jabon, viejo",
@@ -20,6 +41,10 @@ public class Main {
                 "Salamoso");
 
 
+        String unaMarca = salame.GetMarca();
+        System.out.println(unaMarca);
+
+
         /*Producto atun = new Producto();
         atun.SetNombre("Atun");
         Producto salame = new Producto();
@@ -30,11 +55,12 @@ public class Main {
         miCarrito.productos.add(atun);
         miCarrito.productos.add(salame);
         miCarrito.productos.add(jabon);
-        miCarrito.productos.add(jabon);
+
+        miCarrito.productos.get(2).SetMarca("Cambiame la marca");
 
 
         miCarrito.ListarProductos();
-        miCarrito.CambiameElNombreDeUnaMarca("Otro nombre", "jabonosa");
+        //miCarrito.CambiameElNombreDeUnaMarca("Otro nombre", "jabonosa");
         miCarrito.ListarProductos();
 
 
