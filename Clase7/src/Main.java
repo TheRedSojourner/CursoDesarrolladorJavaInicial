@@ -1,43 +1,85 @@
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
 
-        Animal animal1 = new Animal();
+        //Clase 7: Herencia, polimorfismo, un poco de casteo, y foreach ya que estamos
 
-        animal1.SetTipoAnimal(TIPOANIMAL.ANFIBIO);
+        /*Animal animal1 = new Animal();
 
-        Vertebrado verty = new Vertebrado();
-        Invertebrado inverty = new Invertebrado();
+        animal1.SetTipoAnimal(TIPOANIMAL.DOMESTICO);
 
+
+*/
+
+
+
+        Gato gatito = new Gato();
+        Tigre tigrito = new Tigre();
+        Perro perrito = new Perro();
+        Lobo lobito = new Lobo();
+        Lobo lobazo = new Lobo();
+        Lobo wolverine = new Lobo();
+        Gato kdjgdkflgj = new Gato();
+
+        lobito.SetTipoAnimal(TIPOANIMAL.NODOMESTICO);
+        lobazo.SetTipoAnimal(TIPOANIMAL.DOMESTICO);
+
+        System.out.println(lobazo.getTipoanimal());;
 
         ArrayList<Animal> animales = new ArrayList<Animal>();
-        animales.add(verty);
-        animales.add(inverty);
-        int num = 0;
-
+        animales.add(gatito);
+        animales.add(tigrito);
+        animales.add(perrito);
+        animales.add(lobito);
+        animales.add(kdjgdkflgj);
+        animales.add(wolverine);
 
 
         for (int i = 0; i <animales.size() ; i++) {
             animales.get(i).Moverse();
 
+            Animal esteAnimal = animales.get(i);
+
+            /*if (esteAnimal.getClass() == Gato.class)
+            {
+                ((Gato)animales.get(i)).SerExtremadamenteMolesto();
+            }
+            else if (animales.get(i).getClass().equals(Lobo.class))
+            {
+                ((Lobo)esteAnimal).Aullar();
+            }*/
+
+        }
+/*
+        ArrayList<Double> doubles = new ArrayList<>();
+        doubles.add(5.3);
+        doubles.add(1.0);
+        doubles.add(5.6);
+        doubles.add(1.3);
+        doubles.add(3.3);
+
+
+
+        for (Double dobby: doubles) {
+            dobby++;
         }
 
         for (Animal ani: animales) {
             ani.Moverse();
 
         }
+
+
         int i = 0;
+
         do {
             System.out.println("Entramos viejo, ooo");
             i++;
         }
         while (i< animales.size());
-
-
-
-
-
+*/
 
     }
 }

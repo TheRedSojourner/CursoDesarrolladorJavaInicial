@@ -1,6 +1,4 @@
 public enum TIPOANIMAL {
-    CUADRUPEDO,
-    BIPEDO,
-    SERPENTINO,
-    ANFIBIO
+DOMESTICO,
+    NODOMESTICO
 }
