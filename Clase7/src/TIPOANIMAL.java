@@ -1,4 +1,4 @@
 public enum TIPOANIMAL {
-DOMESTICO,
+    DOMESTICO,
     NODOMESTICO
 }

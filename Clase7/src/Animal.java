@@ -1,4 +1,4 @@
-public abstract class Animal {
+public abstract class Animal{
 
     private double peso;
     private HABITAT habitat;
@@ -24,4 +24,13 @@ public abstract class Animal {
     }
 
     public abstract void Respirar();
+
+
+    public void setHabitat(HABITAT habitat) {
+        this.habitat = habitat;
+    }
+
+    public HABITAT getHabitat() {
+        return habitat;
+    }
 }

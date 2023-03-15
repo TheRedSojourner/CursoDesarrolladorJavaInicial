@@ -14,27 +14,36 @@ public class Main {
 */
 
 
-
         Gato gatito = new Gato();
         Tigre tigrito = new Tigre();
-        Perro perrito = new Perro();
+        Perro aquaPerro = new Perro(HABITAT.OCEANICO);
         Lobo lobito = new Lobo();
         Lobo lobazo = new Lobo();
         Lobo wolverine = new Lobo();
         Gato kdjgdkflgj = new Gato();
+        gatito.SetTipoAnimal(TIPOANIMAL.DOMESTICO);
+        gatito.setHabitat(HABITAT.MONTAÑOSO);
+
+
+
 
         lobito.SetTipoAnimal(TIPOANIMAL.NODOMESTICO);
         lobazo.SetTipoAnimal(TIPOANIMAL.DOMESTICO);
 
+
         System.out.println(lobazo.getTipoanimal());;
 
         ArrayList<Animal> animales = new ArrayList<Animal>();
+
         animales.add(gatito);
         animales.add(tigrito);
-        animales.add(perrito);
+        animales.add(aquaPerro);
         animales.add(lobito);
         animales.add(kdjgdkflgj);
         animales.add(wolverine);
+
+        gatito.SerExtremadamenteMolesto();
+
 
 
         for (int i = 0; i <animales.size() ; i++) {
@@ -42,17 +51,19 @@ public class Main {
 
             Animal esteAnimal = animales.get(i);
 
-            /*if (esteAnimal.getClass() == Gato.class)
+            if (esteAnimal.getClass() == Gato.class)
             {
                 ((Gato)animales.get(i)).SerExtremadamenteMolesto();
             }
             else if (animales.get(i).getClass().equals(Lobo.class))
             {
                 ((Lobo)esteAnimal).Aullar();
-            }*/
+            }
 
         }
-/*
+
+        System.out.println(gatito.toString());
+        /*
         ArrayList<Double> doubles = new ArrayList<>();
         doubles.add(5.3);
         doubles.add(1.0);

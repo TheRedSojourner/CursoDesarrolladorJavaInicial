@@ -12,6 +12,11 @@ public class Gato extends Felino{
     public void Respirar() {
 
     }
+
+    public String toString()
+    {
+        return getTipoanimal().toString()+" "+getHabitat();
+    }
 }
 
 
