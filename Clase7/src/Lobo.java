@@ -20,4 +20,6 @@ public class Lobo extends Canino{
     {
         System.out.println("Respiro, respiro");
     }
+
+
 }

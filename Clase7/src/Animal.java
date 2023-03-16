@@ -1,5 +1,9 @@
 public abstract class Animal{
 
+    public Animal()
+    {
+        System.out.println("Nuevo animal");
+    }
     private double peso;
     private HABITAT habitat;
     private TIPOANIMAL tipoanimal;

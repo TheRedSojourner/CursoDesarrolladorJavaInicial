@@ -1,5 +1,9 @@
 public class Gato extends Felino{
 
+    public Gato() {
+        System.out.println("Soy un nuevo gato lololo");
+    }
+
     public void SerExtremadamenteMolesto()
     {
         System.out.println("Soy un gato, es lo que hago. Miau");

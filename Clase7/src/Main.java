@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Main {
@@ -24,6 +23,7 @@ public class Main {
         gatito.SetTipoAnimal(TIPOANIMAL.DOMESTICO);
         gatito.setHabitat(HABITAT.MONTAÑOSO);
 
+        //lobito.toString();
 
 
 
@@ -42,6 +42,7 @@ public class Main {
         animales.add(kdjgdkflgj);
         animales.add(wolverine);
 
+
         gatito.SerExtremadamenteMolesto();
 
 
@@ -50,6 +51,7 @@ public class Main {
             animales.get(i).Moverse();
 
             Animal esteAnimal = animales.get(i);
+
 
             if (esteAnimal.getClass() == Gato.class)
             {
@@ -92,5 +94,35 @@ public class Main {
         while (i< animales.size());
 */
 
+
+        CalcuulameEstoviejo();
+    }
+
+    public static void CalcuulameEstoviejo()
+    {
+
+        int[][] masNums = new int[5][10];
+        int[][][][] multiDimensional = new int[10][10][10][10];
+        int contador = 0;
+
+
+        /*for (int i = 0; i <masNums.length ; i++) {
+            for (int j = 0; j <masNums[0].length ; j++) {
+                masNums[i][j] = i+j;
+                System.out.println("estas son las coordenadas "+i+" "+j);
+            }
+        }*/
+
+        for (int i = 0; i < multiDimensional.length ; i++) {
+            for (int j = 0; j <multiDimensional[0].length ; j++) {
+                for (int k = 0; k < multiDimensional[0][0].length ; k++) {
+                    for (int l = 0; l <multiDimensional[0][0][0].length; l++) {
+                        System.out.println("estas son las coordenadas "+i+" "+j+" "+k+" "+l);
+                        contador++;
+                    }
+                }
+            }
+        }
+        System.out.println(contador);
     }
 }

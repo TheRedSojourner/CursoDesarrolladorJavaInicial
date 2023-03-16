@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         //Clase 6: Testing
 
+
         //https://www.jetbrains.com/help/idea/junit.html
 
         //Como el tipo de proyecto es diferente, vamos a crear un nuevo proyecto.
