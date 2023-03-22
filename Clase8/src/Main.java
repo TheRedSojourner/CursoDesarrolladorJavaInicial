@@ -21,6 +21,9 @@ public class Main {
         } catch (NoHayStockException e) {
             System.out.println("No hay stock de al menos uno de los productos");
         }
+        finally {
+            System.out.println("Esto va a suceder de una forma u otra");
+        }
 
         /*for (int i = 0; i <carrito.productos.size() ; i++) {
             carrito.productos.get(i).getClass();
