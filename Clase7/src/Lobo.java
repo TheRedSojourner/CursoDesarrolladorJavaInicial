@@ -14,6 +14,8 @@ public class Lobo extends Canino{
     public void CambiameElNumeroDePatas(int patas)
     {
         setNumeroDePatas(patas);
+        DejameLadrarViejo();
+
     }
 
     public void Respirar()
