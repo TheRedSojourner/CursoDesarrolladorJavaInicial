@@ -16,13 +16,16 @@ public class Main {
         Gato gatito = new Gato();
         Tigre tigrito = new Tigre();
         Perro aquaPerro = new Perro(HABITAT.OCEANICO);
-        Lobo lobito = new Lobo();
-        Lobo lobazo = new Lobo();
-        Lobo wolverine = new Lobo();
+        Lobo lobito = new Lobo("asd");
+        Lobo lobazo = new Lobo("sdas");
+        Lobo wolverine = new Lobo("asda");
         Gato kdjgdkflgj = new Gato();
         gatito.SetTipoAnimal(TIPOANIMAL.DOMESTICO);
         gatito.setHabitat(HABITAT.MONTAÑOSO);
+        Integer num = 5;
 
+
+        new Gato();
         //lobito.toString();
 
 
@@ -41,6 +44,8 @@ public class Main {
         animales.add(lobito);
         animales.add(kdjgdkflgj);
         animales.add(wolverine);
+
+
 
 
         gatito.SerExtremadamenteMolesto();

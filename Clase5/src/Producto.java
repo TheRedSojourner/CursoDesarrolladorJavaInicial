@@ -69,4 +69,5 @@ public class Producto {
         System.out.println("Este objeto es: "+this.getClass()+" y el precio es:"+ minPrecio);
     }
 
+
 }

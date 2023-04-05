@@ -17,6 +17,7 @@ public class Main {
         //EscribirContenido(Paths.get("clase4/superarchivo.mp3") , "esto es mas contenido lolollllolol");
 
 
+
         /*String path = "C:\\Users\\Ice\\Desktop\\Java\\SuperArchivoDeTexto.txt";
         String otroPathValido = "C:/Users/Ice/Desktop/Java/SuperArchivoDeTexto.txt";
         String otroPathMas = "ArchivoRandom.txt";

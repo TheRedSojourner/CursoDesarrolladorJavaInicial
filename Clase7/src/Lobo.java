@@ -1,5 +1,9 @@
 public class Lobo extends Canino{
 
+    public Lobo(String nombre) {
+        super(nombre);
+    }
+
     public void Aullar()
     {
         System.out.println("Soy un lobo. Auuuuuuuuu");
