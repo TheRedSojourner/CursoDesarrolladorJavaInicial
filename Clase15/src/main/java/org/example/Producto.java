@@ -4,7 +4,7 @@ package org.example;
 import java.io.Serializable;
 
 class Producto implements Serializable {
-    //private static final long serialVersionUID = -6470090944414208496L;
+
 
     public Producto() {}
 
@@ -41,5 +41,14 @@ class Producto implements Serializable {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return "Producto{" +
+                "nombre='" + nombre + '\'' +
+                ", stock=" + stock +
+                ", precio=" + precio +
+                '}';
     }
 }

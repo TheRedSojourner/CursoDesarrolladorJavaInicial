@@ -7,7 +7,18 @@ public class Main {
     public static void main(String[] args) {
 
 
-        CarritoCompra carrito = new CarritoCompra();
+
+    HashSet huevos = new HashSet<>();
+
+    int i = 0;
+        for (Object huevo: huevos) {
+
+        }
+
+
+
+/*
+            CarritoCompra carrito = new CarritoCompra();
         Producto zanahoria = new Producto(0);
         Producto abejas = new Producto(99999);
 
@@ -34,7 +45,7 @@ public class Main {
 
 
 
-        int i = 5;
+        //int i = 5;
         int j = 0;
         //int otroNum = i/j;
 
@@ -42,10 +53,10 @@ public class Main {
         //IntentaUsarUnInputViejo();
 
 
-        System.out.println("Llegamos a esta linea");
-    }
+        //System.out.println("Llegamos a esta linea");
+        }
 
-    public static void IntentaDividirPorZeroViejo(int i, int j)
+    /*public static void IntentaDividirPorZeroViejo(int i, int j)
     {
         try
         {
@@ -87,7 +98,7 @@ public class Main {
             System.err.println("Esto es lo mismo pero es un error viejo");
         }*/
 
-    }
+
 
     public static void MostrameLasListas(Producto zanahoria)
     {
@@ -104,7 +115,7 @@ public class Main {
         HashSet<ArrayList> unHashSet = new HashSet<>();
         //FIRST IN FIRST OUT
         Queue<Producto> unaCola = new LinkedList<>();
-        //LAST IN LAST OUT
+        //FIRST IN LAST OUT
         Stack<Producto> unaPila = new Stack<>();
 
         unHashSet.add(lista);
@@ -119,6 +130,7 @@ public class Main {
         lista.add(zanahoria);
         lista.add(zanahoria);
         lista.add(zanahoria);
+
 
         for (ArrayList listas: unHashSet) {
             //Asi iteramos sobre un hash
