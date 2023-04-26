@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) throws SQLException {
 
 
+
         /*try
         {
             Connection con = DriverManager.getConnection("jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10612595", "sql10612595", "2mKDgPLLsj");
@@ -21,9 +22,10 @@ public class Main {
         {
             System.out.println(e);
         }*/
+        DBHandler.getInstance();
     }
 
-    public static boolean AgregameEstoaLaDB() throws SQLException
+    public static boolean agregameEstoaLaDB() throws SQLException
     {
         boolean success = false;
         try {

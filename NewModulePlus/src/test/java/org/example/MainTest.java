@@ -38,6 +38,6 @@ public class MainTest {
 
     @Test
     public void agregameEstoaLaDB() throws SQLException {
-        Assert.assertTrue(Main.AgregameEstoaLaDB());
+        Assert.assertTrue(Main.agregameEstoaLaDB());
     }
 }
